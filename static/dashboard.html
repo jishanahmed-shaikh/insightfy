@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <div id="chatbot-ui">
+            <div class="input-container">
+                <label for="file-input" class="attach-pin">📎</label>
+                <input type="text" id="text-input" placeholder="Enter text here or attach a file">
+                <input type="file" id="file-input" accept=".pdf,image/*" style="display: none;">
+            </div>
+            <button id="summarize-btn" onclick="processInput('summarize')" disabled>Summarize</button>
+            <button id="sentiment-btn" onclick="processInput('sentiment')" disabled>Sentiment Analysis</button>
+            <button id="unique-words-btn" onclick="processInput('unique-words')" disabled>List Unique Words</button>
+        </div>
+        <div id="output" class="result-box"></div>
+        <button onclick="window.location.href='/static/main.html'">Back to Home</button>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
