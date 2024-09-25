@@ -8,19 +8,20 @@ body {
 }
 
 header {
-    background-color:hsla(226, 30%, 26%, 0.178);
+    background-color: hsla(226, 30%, 26%, 0.178);
     color: #fff;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 7px 0;
+    margin-bottom: 10px;
     animation: fadeIn 2s;
 }
 
-p{
+p {
     color: beige;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 main {
-    padding: 20px;
+    padding: 10px;
 }
 
 .intro, .details {
@@ -29,68 +30,32 @@ main {
     animation: slideIn 1s ease-out;
 }
 
-.welcome{
+.welcome {
     margin-bottom: 2rem;
 }
 
- /* button {
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-} */
-/*
-button:hover {
-    background-color: #0056b3;
-} */
-button{
+button {
     display: inline-block;
-    background-color: hsl(248, 64%, 67%);
-    color: var(--body-color);
+    background-color: hsl(0, 0%, 0%);
+    color: white; 
     padding: .75rem 1rem;
     border-radius: 1rem;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: medium;
     transition: .5s;
     border: none;
-    cursor:pointer
-  }
-  
-  button:hover{
-    background-color: hsl(250, 66%, 75%);
-    color: var(--body-color);
-  }
-  button--ghost{
-    background-color: transparent;
-    border: 2px solid var(--first-color);
-    color: var(--first-color);
-  }
-
-.aboutbox{  
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    row-gap: 2rem;
-    padding: 2rem;
-    padding-top: 2rem;
-    margin: 0 auto;
-    border-radius: 2rem;
-    background-color: hsla(240, 7%, 61%, 0.159);
-    color: rgb(255, 255, 255);
-    
-}
-.feat{
-    color: rgb(255, 255, 255);
-    font-size: larger;
-    padding: 0.25rem;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: hsl(255, 8%, 9%);
+    color: white;
+}
 
+button:disabled {
+    background-color: hsl(240, 71%, 3%); 
+    cursor: not-allowed;
+}
 
 .input-container {
     position: relative;
@@ -104,6 +69,8 @@ input[type="text"] {
     padding: 10px 40px 10px 30px;
     margin: 10px 0;
     box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd; 
 }
 
 .attach-pin {
@@ -130,15 +97,13 @@ input[type="text"] {
     overflow-y: auto;
 }
 
-.about{
-    color:hsl(53, 100%, 66%);
+.about {
+    color: hsl(53, 100%, 66%);
     margin-top: 3rem;
 }
 
-
-ul{
+ul {
     align-items: center;
-    
 }
 
 @keyframes fadeIn {
