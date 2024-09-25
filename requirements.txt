@@ -2,3 +2,4 @@ fastapi
 uvicorn
 nltk
 python-multipart
+pydantic
