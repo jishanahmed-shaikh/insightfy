@@ -1,4 +1,4 @@
-1. Ensure PYTHON 3.11 or above is installed on your system and Clone the Repository, Make Sure you are in the 'insightify' Directory.
+1. Ensure PYTHON 3.11 or above is installed on your system and Clone the Repository, Make Sure you are in the 'insightfy' Directory.
 2. Make sure to download all the required Libraries for the project mentioned in the requirements.txt by using the following command pip install -r requirements.txt
 3. Make sure to install Python libraries :
    - nltk.download('vader_lexicon')
